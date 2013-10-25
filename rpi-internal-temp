@@ -2,6 +2,10 @@
 
 # Based on a script by a man named Andrew
 # Originally located at http://blog.theinternets.be/rpi-munin-temperatures/
+#
+# Copy this file to /usr/share/munin/plugins
+#
+# ln -sf /usr/share/munin/plugins/rpi-internal-temp ./rpi-internal-temp
 
 if [ "$1" == "autoconf" ]; then
      if [ -e /sys/class/thermal/thermal_zone0/temp ]; then
